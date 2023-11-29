@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+:root {
+  --color-primary: #cda459;
+  --color-white: #eaeaea;
+}
+.background_video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  filter: brightness(70%);
+}
+p {
+  color: white;
+}
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 12px 28px;
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--color-primary);
+}
+.container {
+  max-width: 1620px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Start Nav Bar*/
+.header-left .porsche-image {
+  position: absolute;
+  max-width: 33%;
+  right: -53%;
+}
+nav {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+}
+.nav-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo h3 {
+  font-size: 25px;
+  color: var(--color-white);
+}
+.nav-link li a {  
+  color: var(--color-white);
+  font-size: 17px;
+  display: inline-block;
+  font-size: 20px;
+}
+.nav-link li a:hover {
+  color: var(--color-primary);
+  transition: 0.3s ease;
+}
+.nav-link li .active {
+  color: var(--color-primary);
+}
+.nav-container {
+  display: flex;
+  height: 5%;
+  width: fit-content;
+  margin: 0;
+  background-color: rgba(200, 200, 200, 0.4);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 2.3vh;
+  justify-items: center;
+}
+/* End Nav Bar*/
+
+/* Start Header Section */
+header {
+  width: 100;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-left {
+  max-width: 620px;
+  position: relative;
+}
+.header-left h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+.header-left h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+.header-left p {
+  margin: 15px 0 30px;
+  line-height: 150%;
+  font-size: 16px;
+}
+/* End Header Section */

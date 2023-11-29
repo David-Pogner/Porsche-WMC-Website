@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --color-primary: #cda459;
+  --color-white: #eaeaea;
+}
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("rootimg.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+}
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  margin-top: 3rem;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #cda459;
+}
+.contact .content p {
+  font-size: 60px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 150%;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2.1rem;
+  width: 28vw;
+  margin-right: 20rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 22px;
+}
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #cda459;
+}
+.contactForm {
+  width: 35%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 0.625rem;
+}
+.contactForm form h2 {
+  font-size: 30px;
+  color: #cda459;
+  font-weight: 500;
+}
+.container .contactInfo .box .text p {
+  color: black;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding-inline-start: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  padding: 5px 0;
+  font-size: 13px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox .typeYourmessage {
+  top: 1px;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: transparent;
+  font-size: 12px;
+  transform: translate(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #cda459;
+  border: 2px solid #cda459;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 19px;
+  transition: 0.3s ease;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+  transition: 0.3s ease;
+  color: #cda459;
+  background: transparent;
+}
+/* Start Nav Bar*/
+nav {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+.nav-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-link li a {
+  color: var(--color-white);
+  font-size: 17px;
+  display: inline-block;
+  font-size: 20px;
+}
+.nav-link li a:hover {
+  color: var(--color-primary);
+}
+.nav-link li .active {
+  color: var(--color-primary);
+}
+.nav-container {
+  display: flex;
+  height: 5%;
+  width: 33%;
+  margin: 0;
+  background-color: rgba(200, 200, 200, 0.4);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 2.3vh;
+  left: 36vw;
+}
+/* End Nav Bar*/
