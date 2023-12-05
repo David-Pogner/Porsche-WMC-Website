@@ -11,6 +11,11 @@
   --color-primary: #cda459;
   --color-white: #eaeaea;
 }
+.header-left .porsche-image {
+  position: absolute;
+  max-width: 33%;
+  right: -48%;
+}
 .background_video {
   position: absolute;
   object-fit: cover;
