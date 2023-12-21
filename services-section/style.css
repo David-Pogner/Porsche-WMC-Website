@@ -7,19 +7,76 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 :root {
   --color-primary: #cda459;
   --color-white: #eaeaea;
 }
+
 .background-image {
-  background-color: black;
+  background-image: url(../images/porsche-streched.jpg);
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   filter: brightness(70%);
   z-index: -1;
+}
+
+.service-and-maintenance,
+.original-parts-tires-oil,
+.warranty-and-vehicle-information
+{
+  position: absolute;
+  background-color: var(--color-white);
+  border: 1px solid #ccc;
+  padding: 15px;
+  left: 1.4rem;
+  width: 30rem;
+  height: 6rem;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+}
+
+.service-and-maintenance:hover,
+.original-parts-tires-oil:hover,
+.warranty-and-vehicle-information:hover
+{
+  position: absolute;
+  background-color: var(--color-primary);
+  border: 1px solid #ccc;
+  padding: 15px;
+  left: 1.4rem;
+  width: 32rem;
+  height: 8rem;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-and-maintenance {
+  top: 8rem;
+}
+
+.original-parts-tires-oil{
+  top: 18rem;
+}
+
+.warranty-and-vehicle-information {
+  top: 28rem;
+}
+
+p {
+  margin-top: 0.7rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease;
+  width: fit-content;
+}
+
+p:hover {
+  color: white;
 }

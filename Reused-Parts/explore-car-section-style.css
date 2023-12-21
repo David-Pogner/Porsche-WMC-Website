@@ -7,10 +7,12 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 :root {
   --color-primary: black;
   --color-white: #eaeaea;
 }
+
 .background-image {
   position: fixed;
   top: 0;
@@ -39,11 +41,13 @@
   z-index: 1;
   width: fit-content;
 }
+
 ul {
   list-style: none;
   padding: 0 15px;
   z-index: 1;
 }
+
 ul li {
   margin: 30px 0;
   display: flex;
@@ -51,9 +55,11 @@ ul li {
   justify-content: center;
   z-index: 1;
 }
+
 p {
   color: white;
 }
+
 .side-nav .porsche-logo {
   position: absolute;
   width: 80%;
@@ -68,6 +74,7 @@ p {
   width: 90%;
   margin: 0 auto;
 }
+
 .info {
   width: 100%;
   padding: 0 7%;
@@ -83,9 +90,11 @@ p {
   z-index: 0;
   justify-items: center;
 }
+
 .info div {
   margin: 0 20px;
 }
+
 .info div h2 {
   font-size: 44px;
   font-weight: 40px;
@@ -102,20 +111,24 @@ nav {
   display: grid;
   place-items: center;
 }
+
 .nav-container {
   justify-content: center;
   display: flex;
   align-items: center;
 }
+
 .nav-container ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .logo h3 {
   font-size: 25px;
   color: var(--color-white);
 }
+
 .nav-link li a {  
   color: var(--color-white);
   font-size: 17px;
@@ -123,13 +136,16 @@ nav {
   font-size: 20px;
   margin-right: 1rem;
 }
+
 .nav-link li a:hover {
   color: var(--color-primary);
   transition: 0.3s ease;
 }
+
 .nav-link li .active {
   color: var(--color-primary);
 }
+
 .nav-container {
   display: flex;
   height: 5%;
