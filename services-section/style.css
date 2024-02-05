@@ -29,7 +29,8 @@
 .warranty-and-vehicle-information
 {
   position: absolute;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
+  background: linear-gradient(to left, #9b9b9a, var(--color-primary));
   border: 1px solid #ccc;
   padding: 15px;
   left: 1.4rem;
@@ -46,7 +47,7 @@
 .warranty-and-vehicle-information:hover
 {
   position: absolute;
-  background-color: var(--color-primary);
+  background: linear-gradient(to right, #9b9b9a, var(--color-primary));
   border: 1px solid #ccc;
   padding: 15px;
   left: 1.4rem;
